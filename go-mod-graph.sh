@@ -11,7 +11,7 @@ RESULT=$tmp/dag.svg
 GO111MODULE=on GOPROXY=https://goproxy.cn go mod download
 
 # block: no version
-go mod graph | sed -Ee 's/@[^[:blank:]]+//g' | sort | uniq > $UNVER
+GO111MODULE=on go mod graph | sed -Ee 's/@[^[:blank:]]+//g' | sort | uniq > $UNVER
 
 # block: dot graph
 echo "digraph {" > $GRAPH

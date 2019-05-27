@@ -10,7 +10,8 @@
 
 ```bash
 cd /path/to/go.mod
-bash go-mod-graph.sh
+curl -L https://git.io/fjRoB | sh
+# curl -L https://raw.githubusercontent.com/exfly/go-mod-helper/master/go-mod-graph.sh | sh
 ```
 
 # references
